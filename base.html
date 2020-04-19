@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <title>{% block title %}{% endblock %}</title>
 {#        Liens des fichiers de style css  avec différenciation car les styles différents#}
-        {% if current_menu is defined and current_menu == 'login' %}
-            <link href="css/style_login.css" rel="stylesheet">
-        {% elseif current_menu is defined and current_menu == 'home' %}
-            <link href="css/style_home.css" rel="stylesheet">
-        {% elseif current_menu is defined and current_menu == 'email' %}
-            <link href="css/style_email.css" rel="stylesheet">
+<!--        {% if current_menu is defined and current_menu == 'login' %}-->
+            <link href="style_login.css" rel="stylesheet">
+<!--        {% elseif current_menu is defined and current_menu == 'home' %}-->
+            <link href="style_home.css" rel="stylesheet">
+<!--        {% elseif current_menu is defined and current_menu == 'email' %}-->
+            <link href="style_email.css" rel="stylesheet">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        {% endif %}
+<!--        {% endif %}-->
         {% block stylesheets %}
         {% endblock %}
     </head>
