@@ -1,176 +1,183 @@
-{% extends 'base.html.twig' %}
-{% block title %}Netflix France - Regardez des séries TV en ligne, Regardez des films en ligne{% endblock %}
-{% block body %}
-    <body>
-        <div id="appMountPoint">
-            <div class="basicLayout">
-                <div class="netflix-sans-font-loaded">
-                    <div class="our-story-desktop-framework cookie-disclosure-visible cookie-disclosure-clicked">
-                        <div>
-                            <div class="our-story-container" dir="ltr">
-                                <div class="our-story-header-wrapper">
-                                    <div id="cookie-disclosure" data-uia="cookie-disclosure" class="clearfix">
-                                        <p class="cookie-disclosure-message reg">Netflix utilise des cookies à diverses fins, notamment pour accroître la pertinence de ses recommandations et pour personnaliser ses publicités en ligne.
-                                            <a class="cookie-disclosure-link" href="/cookies">En savoir plus</a>
-                                            ou
-                                            <a class="pointer cookie-disclosure-link" href="https://c.betrad.com/netflix/customlink.html?locale=fr-FR">modifier vos préférences de cookies
-                                            </a>
-                                            . Netflix respecte les principes de l'Alliance de la publicité numérique. En utilisant ce site, vous acceptez notre utilisation des cookies.
-                                        </p>
-                                        <p class="cookie-disclosure-message short">Nous utilisons des cookies
-                                            (<a class="cookie-disclosure-link" href="/cookies">pourquoi&nbsp;?</a>)
-                                            . Vous pouvez en modifier les
-                                            <a class="pointer cookie-disclosure-link" href="https://c.betrad.com/netflix/customlink.html?locale=fr-FR">préférences</a>
-                                            . En utilisant le site, vous signifiez votre accord.
-                                        </p>
-                                        <div class="btn-container">
-                                            <button data-uia="close-button" class="close-button">
-                                                <span class="icon-close" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Fermer</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="our-story-header" data-uia-our-story="our-story-header">
-                                        <span class="svg-nfLogo our-story-logo nfLogo" data-uia="netflix-header-svg-logo-noclick">
-                                            <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="false">
-                                                <g id="netflix-logo">
-                                                    <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path>
-                                                </g>
-                                            </svg>
-                                            <span class="screen-reader-text">Netflix</span>
-                                        </span>
-                                        <a href="Security-index.html" class="authLinks redButton" data-uia="header-login-link">S'identifier</a>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style_email.css" rel="stylesheet">
+</head>
+<body>
+    <div id="appMountPoint">
+        <div class="basicLayout">
+            <div class="netflix-sans-font-loaded">
+                <div class="our-story-desktop-framework cookie-disclosure-visible cookie-disclosure-clicked">
+                    <div>
+                        <div class="our-story-container" dir="ltr">
+                            <div class="our-story-header-wrapper">
+                                <div id="cookie-disclosure" data-uia="cookie-disclosure" class="clearfix">
+                                    <p class="cookie-disclosure-message reg">Netflix utilise des cookies à diverses fins, notamment pour accroître la pertinence de ses recommandations et pour personnaliser ses publicités en ligne.
+                                        <a class="cookie-disclosure-link" href="/cookies">En savoir plus</a>
+                                        ou
+                                        <a class="pointer cookie-disclosure-link" href="https://c.betrad.com/netflix/customlink.html?locale=fr-FR">modifier vos préférences de cookies
+                                        </a>
+                                        . Netflix respecte les principes de l'Alliance de la publicité numérique. En utilisant ce site, vous acceptez notre utilisation des cookies.
+                                    </p>
+                                    <p class="cookie-disclosure-message short">Nous utilisons des cookies
+                                        (<a class="cookie-disclosure-link" href="/cookies">pourquoi&nbsp;?</a>)
+                                        . Vous pouvez en modifier les
+                                        <a class="pointer cookie-disclosure-link" href="https://c.betrad.com/netflix/customlink.html?locale=fr-FR">préférences</a>
+                                        . En utilisant le site, vous signifiez votre accord.
+                                    </p>
+                                    <div class="btn-container">
+                                        <button data-uia="close-button" class="close-button">
+                                            <span class="icon-close" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Fermer</span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="our-story-cards" data-uia-our-story="our-story-cards">
-                                    <div class="our-story-card hero-card vlv" data-uia-our-story="hero_fuji" data-uia="our-story-card">
-                                        <div class="our-story-card-background">
-                                            <div class="concord-img-wrapper" data-uia="concord-img-wrapper" style="height: 672.594px;">
-                                                <img class="concord-img vlv-creative" src="https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg" srcset="https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt="">
-                                                <div class="concord-img-gradient"></div>
-                                            </div>
+                                <div class="our-story-header" data-uia-our-story="our-story-header">
+                                    <span class="svg-nfLogo our-story-logo nfLogo" data-uia="netflix-header-svg-logo-noclick">
+                                        <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="false">
+                                            <g id="netflix-logo">
+                                                <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path>
+                                            </g>
+                                        </svg>
+                                        <span class="screen-reader-text">Netflix</span>
+                                    </span>
+                                    <a href="Security-index.html" class="authLinks redButton" data-uia="header-login-link">S'identifier</a>
+                                </div>
+                            </div>
+                            <div class="our-story-cards" data-uia-our-story="our-story-cards">
+                                <div class="our-story-card hero-card vlv" data-uia-our-story="hero_fuji" data-uia="our-story-card">
+                                    <div class="our-story-card-background">
+                                        <div class="concord-img-wrapper" data-uia="concord-img-wrapper" style="height: 672.594px;">
+                                            <img class="concord-img vlv-creative" src="https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg" srcset="https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/3b48f428-24ed-4692-bb04-bc7771854131/7ca1e3b1-9e3c-4591-a24a-c11453b03bc9/FR-fr-20200302-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w" alt="">
+                                            <div class="concord-img-gradient"></div>
                                         </div>
-                                        <div class="our-story-card-text">
-                                            <h1 id="" class="our-story-card-title" data-uia="hero-title">Films, séries&nbsp;TV et bien plus en illimité.</h1>
-                                            <h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Où que vous soyez. Annulez à tout moment.</h2>
-                                            <form class="cta-form email-form" data-uia="email-form" method="POST"><h3 class="email-form-title">Prêt à regarder Netflix&nbsp;? Saisissez votre adresse e-mail pour créer votre compte ou y accéder.</h3><div class="email-form-lockup"><ul class="simpleForm structural ui-grid"><li data-uia="field-email+wrapper" class="nfFormSpace field-email"><div data-uia="field-email+container" class="nfInput nfInputResponsive"><div class="nfInputPlacement"><label class="input_id" placeholder="email"><input type="email" data-uia="field-email" name="email" class="nfTextField" id="id_email" value="" tabindex="0" autocomplete="email" maxlength="50" minlength="5" dir=""><label for="id_email" class="placeLabel">Adresse e-mail</label>
-                                                                    </label></div></div></li></ul><div class="our-story-cta-container"><div class="our-story-cta-container-inner"><div class="our-story-cta-button-container"><div class="cta-link-wrapper"><button style="color: white" class="btn our-story-cta our-story-cta-default our-story-cta-extra-large our-story-cta-chevron our-story-cta-normal-weight btn-red btn-large" type="submit" autocomplete="off" tabindex="0" placeholder="cta_link_startSignup" data-uia="home-cta"><span class="hero-cta-btn-txt" data-uia-our-story="hero-cta-btn-txt">ESSAYER</span><span id="" class="chevron-right-arrow" data-uia=""><svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none" fill-rule="evenodd">
+                                    </div>
+                                    <div class="our-story-card-text">
+                                        <h1 id="" class="our-story-card-title" data-uia="hero-title">Films, séries&nbsp;TV et bien plus en illimité.</h1>
+                                        <h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Où que vous soyez. Annulez à tout moment.</h2>
+                                        <form class="cta-form email-form" data-uia="email-form" method="POST"><h3 class="email-form-title">Prêt à regarder Netflix&nbsp;? Saisissez votre adresse e-mail pour créer votre compte ou y accéder.</h3><div class="email-form-lockup"><ul class="simpleForm structural ui-grid"><li data-uia="field-email+wrapper" class="nfFormSpace field-email"><div data-uia="field-email+container" class="nfInput nfInputResponsive"><div class="nfInputPlacement"><label class="input_id" placeholder="email"><input type="email" data-uia="field-email" name="email" class="nfTextField" id="id_email" value="" tabindex="0" autocomplete="email" maxlength="50" minlength="5" dir=""><label for="id_email" class="placeLabel">Adresse e-mail</label>
+                                                                </label></div></div></li></ul><div class="our-story-cta-container"><div class="our-story-cta-container-inner"><div class="our-story-cta-button-container"><div class="cta-link-wrapper"><button style="color: white" class="btn our-story-cta our-story-cta-default our-story-cta-extra-large our-story-cta-chevron our-story-cta-normal-weight btn-red btn-large" type="submit" autocomplete="off" tabindex="0" placeholder="cta_link_startSignup" data-uia="home-cta"><span class="hero-cta-btn-txt" data-uia-our-story="hero-cta-btn-txt">ESSAYER</span><span id="" class="chevron-right-arrow" data-uia=""><svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none" fill-rule="evenodd">
 
-                                                                                </path></svg></span></button></div></div></div></div></div></form>
-                                        </div>
-                                        <div class="center-pixel" style="position:absolute">
+                                                                            </path></svg></span></button></div></div></div></div></div></form>
+                                    </div>
+                                    <div class="center-pixel" style="position:absolute">
+
+                                    </div>
+                                </div>
+                                <div class="our-story-card animation-card watchOnTv" data-uia-our-story="watchOnTv" data-uia="our-story-card"><div class="animation-card-container"><div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="animation-card-title">Regardez Netflix sur votre&nbsp;TV.</h1><h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Regardez Netflix sur votre Smart&nbsp;TV, PlayStation, Xbox, Chromecast, Apple&nbsp;TV, lecteurs Blu-ray et bien plus.</h2></div><div class="our-story-card-img-container"><div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img"><div class="our-story-card-animation"><video class="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv.m4v" type="video/mp4"></video><div class="our-story-card-animation-text"></div></div></div></div><div class="center-pixel" style="position:absolute">
 
                                         </div>
                                     </div>
-                                    <div class="our-story-card animation-card watchOnTv" data-uia-our-story="watchOnTv" data-uia="our-story-card"><div class="animation-card-container"><div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="animation-card-title">Regardez Netflix sur votre&nbsp;TV.</h1><h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Regardez Netflix sur votre Smart&nbsp;TV, PlayStation, Xbox, Chromecast, Apple&nbsp;TV, lecteurs Blu-ray et bien plus.</h2></div><div class="our-story-card-img-container"><div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img"><div class="our-story-card-animation"><video class="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv.m4v" type="video/mp4"></video><div class="our-story-card-animation-text"></div></div></div></div><div class="center-pixel" style="position:absolute">
+                                </div><div class="our-story-card animation-card downloadAndWatch flipped" data-uia-our-story="downloadAndWatch" data-uia="our-story-card">
+                                    <div class="animation-card-container"><div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="animation-card-title">Téléchargez vos séries préférées pour les regarder hors connexion.</h1><h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Profitez du mode hors ligne sans épuiser votre forfait.</h2></div><div class="our-story-card-img-container"><div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="our-story-card-img"><div class="our-story-card-animation"><div class="our-story-card-animation-image"><img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"></div><div class="our-story-card-animation-text"><div id="" class="text-0" data-uia="">Stranger Things</div><div id="" class="text-1" data-uia="">Téléchargement en cours...</div></div></div></div></div><div class="center-pixel" style="position:absolute">
 
-                                            </div>
-                                        </div>
-                                    </div><div class="our-story-card animation-card downloadAndWatch flipped" data-uia-our-story="downloadAndWatch" data-uia="our-story-card">
-                                        <div class="animation-card-container"><div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="animation-card-title">Téléchargez vos séries préférées pour les regarder hors connexion.</h1><h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Profitez du mode hors ligne sans épuiser votre forfait.</h2></div><div class="our-story-card-img-container"><div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="our-story-card-img"><div class="our-story-card-animation"><div class="our-story-card-animation-image"><img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"></div><div class="our-story-card-animation-text"><div id="" class="text-0" data-uia="">Stranger Things</div><div id="" class="text-1" data-uia="">Téléchargement en cours...</div></div></div></div></div><div class="center-pixel" style="position:absolute">
-
-                                            </div></div></div>
-                                    <div class="our-story-card animation-card watchOnDevice" data-uia-our-story="watchOnDevice" data-uia="our-story-card"><div class="animation-card-container"><div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="animation-card-title">Où que vous soyez.</h1><h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Regardez des films et séries&nbsp;TV en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.</h2></div><div class="our-story-card-img-container"><div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" data-uia="our-story-card-img"><div class="our-story-card-animation"><video class="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"></video><div class="our-story-card-animation-text"></div>
-                                                    </div></div></div><div class="center-pixel" style="position:absolute"></div></div></div>
-                                    <div class="our-story-card faq-card" href="https://help.netflix.com/support/412" data-uia-our-story="faq" data-uia="our-story-card" id="faq">
-                                        <div class="our-story-card-text" id="accordionExample">
-                                            <h1 id="" class="our-story-card-title" data-uia="faq-title" >Foire aux questions</h1>
-                                            <ul class="faq-list">
-                                                <li class="faq-list-item" id="headingOne" data-uia-our-story="faq-list-item">
-                                                    <button class="faq-question"  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Netflix, qu'est-ce que c'est&nbsp;?
-                                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                                                            <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <div id="collapseOne" class="faq-answer" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                                        <span class="" id="" data-uia="">Netflix est un service de streaming qui propose une vaste sélection de séries&nbsp;TV, films, animes, documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.<br><br>Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. Découvrez de nouveaux films et séries&nbsp;TV chaque semaine, il y en a pour tous les goûts&nbsp;!</span>
-                                                    </div>
-                                                </li>
-                                                <li class="faq-list-item" id="headingTwo" data-uia-our-story="faq-list-item">
-                                                    <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Combien coûte Netflix&nbsp;?
-                                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                                                            <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <div id="collapseTwo" class="faq-answer" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                                        <span class="" id="" data-uia="">Regardez Netflix sur votre smartphone, tablette, Smart&nbsp;TV, ordinateur ou appareil de streaming, à un tarif mensuel fixe très attractif. Forfaits à partir de 7,99&nbsp;€ par mois. Sans contrat ni frais supplémentaires.
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="faq-list-item" id="headingThree" data-uia-our-story="faq-list-item">
-                                                    <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Où puis-je regarder Netflix&nbsp;?
-                                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <div id="collapseThree" class="faq-answer collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                                        <span class="card-body" id="" data-uia="">Regardez où et quand vous voulez, sur un nombre illimité d'appareils. Connectez-vous à votre compte pour regarder Netflix en ligne sur netflix.com depuis votre ordinateur ou tout appareil connecté à Internet avec l'application Netflix, comme les Smart TV, smartphones, tablettes, lecteurs de streaming et consoles de jeu.<br><br>Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android ou Windows&nbsp;10. Téléchargez des titres pour les regarder sur votre appareil mobile, même sans connexion Internet. Emportez Netflix partout avec vous.</span>
-                                                    </div>
-                                                </li>
-                                                <li class="faq-list-item" id="headingFour" data-uia-our-story="faq-list-item">
-                                                    <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Comment puis-je annuler mon forfait&nbsp;?
-                                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                                                            <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <div id="collapseFour" class="faq-answer collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                                        <span class="card-body" id="" data-uia="">Netflix offre une grande souplesse. Pas de contrat compliqué. Sans engagement. Deux clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation&nbsp;: ouvrez ou fermez votre compte à tout moment.</span>
-                                                    </div>
-                                                </li>
-                                                <li class="faq-list-item" id="headingFive" data-uia-our-story="faq-list-item">
-                                                    <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Que puis-je regarder sur Netflix&nbsp;?
-                                                        <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                                                            <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <div id="collapseFive" class="faq-answer collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
-                                                        <span class="card-body" id="" data-uia="">Netflix propose un vaste catalogue comprenant notamment des longs métrages, des documentaires, des séries&nbsp;TV, des animes et des programmes originaux Netflix primés. Regardez Netflix à volonté, quand vous le voulez.</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                            <form class="cta-form email-form" data-uia="email-form" method="POST">
-                                                <h3 class="email-form-title">Prêt à regarder Netflix&nbsp;? Saisissez votre adresse e-mail pour créer votre compte ou y accéder.</h3>
-                                                <div class="email-form-lockup">
-                                                    <ul class="simpleForm structural ui-grid">
-                                                        <li data-uia="field-email+wrapper" class="nfFormSpace field-email">
-                                                            <div data-uia="field-email+container" class="nfInput nfInputResponsive">
-                                                                <div class="nfInputPlacement">
-                                                                    <label class="input_id" placeholder="email">
-                                                                        <input type="email" data-uia="field-email" name="email" class="nfTextField" id="id_email" value="" tabindex="0" autocomplete="email" maxlength="50" minlength="5" dir="">
-                                                                        <label for="id_email" class="placeLabel">Adresse e-mail</label>
-                                                                    </label>
-                                                                </div>
+                                        </div></div></div>
+                                <div class="our-story-card animation-card watchOnDevice" data-uia-our-story="watchOnDevice" data-uia="our-story-card"><div class="animation-card-container"><div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="animation-card-title">Où que vous soyez.</h1><h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Regardez des films et séries&nbsp;TV en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.</h2></div><div class="our-story-card-img-container"><div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" data-uia="our-story-card-img"><div class="our-story-card-animation"><video class="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"></video><div class="our-story-card-animation-text"></div>
+                                                </div></div></div><div class="center-pixel" style="position:absolute"></div></div></div>
+                                <div class="our-story-card faq-card" href="https://help.netflix.com/support/412" data-uia-our-story="faq" data-uia="our-story-card" id="faq">
+                                    <div class="our-story-card-text" id="accordionExample">
+                                        <h1 id="" class="our-story-card-title" data-uia="faq-title" >Foire aux questions</h1>
+                                        <ul class="faq-list">
+                                            <li class="faq-list-item" id="headingOne" data-uia-our-story="faq-list-item">
+                                                <button class="faq-question"  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Netflix, qu'est-ce que c'est&nbsp;?
+                                                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                                        <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div id="collapseOne" class="faq-answer" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                    <span class="" id="" data-uia="">Netflix est un service de streaming qui propose une vaste sélection de séries&nbsp;TV, films, animes, documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.<br><br>Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. Découvrez de nouveaux films et séries&nbsp;TV chaque semaine, il y en a pour tous les goûts&nbsp;!</span>
+                                                </div>
+                                            </li>
+                                            <li class="faq-list-item" id="headingTwo" data-uia-our-story="faq-list-item">
+                                                <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Combien coûte Netflix&nbsp;?
+                                                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                                        <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div id="collapseTwo" class="faq-answer" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                    <span class="" id="" data-uia="">Regardez Netflix sur votre smartphone, tablette, Smart&nbsp;TV, ordinateur ou appareil de streaming, à un tarif mensuel fixe très attractif. Forfaits à partir de 7,99&nbsp;€ par mois. Sans contrat ni frais supplémentaires.
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="faq-list-item" id="headingThree" data-uia-our-story="faq-list-item">
+                                                <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Où puis-je regarder Netflix&nbsp;?
+                                                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div id="collapseThree" class="faq-answer collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                    <span class="card-body" id="" data-uia="">Regardez où et quand vous voulez, sur un nombre illimité d'appareils. Connectez-vous à votre compte pour regarder Netflix en ligne sur netflix.com depuis votre ordinateur ou tout appareil connecté à Internet avec l'application Netflix, comme les Smart TV, smartphones, tablettes, lecteurs de streaming et consoles de jeu.<br><br>Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android ou Windows&nbsp;10. Téléchargez des titres pour les regarder sur votre appareil mobile, même sans connexion Internet. Emportez Netflix partout avec vous.</span>
+                                                </div>
+                                            </li>
+                                            <li class="faq-list-item" id="headingFour" data-uia-our-story="faq-list-item">
+                                                <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Comment puis-je annuler mon forfait&nbsp;?
+                                                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                                        <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div id="collapseFour" class="faq-answer collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                                    <span class="card-body" id="" data-uia="">Netflix offre une grande souplesse. Pas de contrat compliqué. Sans engagement. Deux clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation&nbsp;: ouvrez ou fermez votre compte à tout moment.</span>
+                                                </div>
+                                            </li>
+                                            <li class="faq-list-item" id="headingFive" data-uia-our-story="faq-list-item">
+                                                <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Que puis-je regarder sur Netflix&nbsp;?
+                                                    <svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                                        <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div id="collapseFive" class="faq-answer collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                                    <span class="card-body" id="" data-uia="">Netflix propose un vaste catalogue comprenant notamment des longs métrages, des documentaires, des séries&nbsp;TV, des animes et des programmes originaux Netflix primés. Regardez Netflix à volonté, quand vous le voulez.</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                        <form class="cta-form email-form" data-uia="email-form" method="POST">
+                                            <h3 class="email-form-title">Prêt à regarder Netflix&nbsp;? Saisissez votre adresse e-mail pour créer votre compte ou y accéder.</h3>
+                                            <div class="email-form-lockup">
+                                                <ul class="simpleForm structural ui-grid">
+                                                    <li data-uia="field-email+wrapper" class="nfFormSpace field-email">
+                                                        <div data-uia="field-email+container" class="nfInput nfInputResponsive">
+                                                            <div class="nfInputPlacement">
+                                                                <label class="input_id" placeholder="email">
+                                                                    <input type="email" data-uia="field-email" name="email" class="nfTextField" id="id_email" value="" tabindex="0" autocomplete="email" maxlength="50" minlength="5" dir="">
+                                                                    <label for="id_email" class="placeLabel">Adresse e-mail</label>
+                                                                </label>
                                                             </div>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="our-story-cta-container">
-                                                        <div class="our-story-cta-container-inner">
-                                                            <div class="our-story-cta-button-container">
-                                                                <div class="cta-link-wrapper">
-                                                                    <button style="color: #fdffff;" class="btn our-story-cta our-story-cta-default our-story-cta-extra-large our-story-cta-chevron our-story-cta-normal-weight btn-red btn-large" type="submit" autocomplete="off" tabindex="0" placeholder="cta_link_startSignup" data-uia="home-cta">
-                                                                        <span class="hero-cta-btn-txt" data-uia-our-story="hero-cta-btn-txt">ESSAYER</span>
-                                                                        <span id="" class="chevron-right-arrow" data-uia="">
-                                                                            <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
-                                                                                <desc>chevron</desc>
-                                                                                <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none" fill-rule="evenodd"></path>
-                                                                            </svg>
-                                                                        </span>
-                                                                    </button>
-                                                                </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="our-story-cta-container">
+                                                    <div class="our-story-cta-container-inner">
+                                                        <div class="our-story-cta-button-container">
+                                                            <div class="cta-link-wrapper">
+                                                                <button style="color: #fdffff;" class="btn our-story-cta our-story-cta-default our-story-cta-extra-large our-story-cta-chevron our-story-cta-normal-weight btn-red btn-large" type="submit" autocomplete="off" tabindex="0" placeholder="cta_link_startSignup" data-uia="home-cta">
+                                                                    <span class="hero-cta-btn-txt" data-uia-our-story="hero-cta-btn-txt">ESSAYER</span>
+                                                                    <span id="" class="chevron-right-arrow" data-uia="">
+                                                                        <svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                                                                            <desc>chevron</desc>
+                                                                            <path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="none" fill-rule="evenodd"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
-                        </div>
-                        <div class="center-pixel" style="position:absolute"></div></div><div class="our-story-card card-contents footer-card our-story-card-no-border" style="position:relative" data-uia-our-story="footer" data-uia="our-story-card"><div class="site-footer-wrapper centered dark"><div class="footer-divider"></div><div class="site-footer"><p class="footer-top"><a class="footer-top-a" href="https://help.netflix.com/contactus">Des questions&nbsp;? Contactez-nous.</a></p><ul class="footer-links structural"><li class="footer-link-item" placeholder="footer_responsive_link_faq_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/support/412" placeholder="footer_responsive_link_faq"><span id="" data-uia="data-uia-footer-label">FAQ</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_help_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com" placeholder="footer_responsive_link_help"><span id="" data-uia="data-uia-footer-label">Centre d'aide</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_account_item"><a class="footer-link" data-uia="footer-link" href="/youraccount" placeholder="footer_responsive_link_account"><span id="" data-uia="data-uia-footer-label">Compte</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_media_center_item"><a class="footer-link" data-uia="footer-link" href="https://media.netflix.com/" placeholder="footer_responsive_link_media_center"><span id="" data-uia="data-uia-footer-label">Presse</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_relations_item"><a class="footer-link" data-uia="footer-link" href="http://ir.netflix.com/" placeholder="footer_responsive_link_relations"><span id="" data-uia="data-uia-footer-label">Relations Investisseurs</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_jobs_item"><a class="footer-link" data-uia="footer-link" href="https://jobs.netflix.com/jobs" placeholder="footer_responsive_link_jobs"><span id="" data-uia="data-uia-footer-label">Recrutement</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_gift_redeem_item"><a class="footer-link" data-uia="footer-link" href="/redeem" placeholder="footer_responsive_link_gift_redeem"><span id="" data-uia="data-uia-footer-label">Utiliser des cartes cadeaux</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_gift_buy_item"><a class="footer-link" data-uia="footer-link" href="/gift-cards" placeholder="footer_responsive_link_gift_buy"><span id="" data-uia="data-uia-footer-label">Acheter des cartes cadeaux</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_waysToWatch_item"><a class="footer-link" data-uia="footer-link" href="/watch" placeholder="footer_responsive_link_waysToWatch"><span id="" data-uia="data-uia-footer-label">Modes de lecture</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_terms_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/termsofuse" placeholder="footer_responsive_link_terms"><span id="" data-uia="data-uia-footer-label">Conditions d'utilisation</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_privacy_separate_link_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/privacy" placeholder="footer_responsive_link_privacy_separate_link"><span id="" data-uia="data-uia-footer-label">Confidentialité</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_cookies_separate_link_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/privacy#cookies" placeholder="footer_responsive_link_cookies_separate_link"><span id="" data-uia="data-uia-footer-label">Préférences de cookies</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_corporate_information_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/fr/node/2101" placeholder="footer_responsive_link_corporate_information"><span id="" data-uia="data-uia-footer-label">Mentions légales</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_contact_us_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/contactus" placeholder="footer_responsive_link_contact_us"><span id="" data-uia="data-uia-footer-label">Nous contacter</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_speed_test_item"><a class="footer-link" data-uia="footer-link" href="https://fast.com" placeholder="footer_responsive_link_speed_test"><span id="" data-uia="data-uia-footer-label">Test de vitesse</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_legal_notices_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/notices" placeholder="footer_responsive_link_legal_notices"><span id="" data-uia="data-uia-footer-label">Informations légales</span></a></li><li class="footer-link-item originals-link" placeholder="footer_responsive_link_netflix_originals_item"><a class="footer-link" data-uia="footer-link" href="https://www.netflix.com/fr/browse/genre/839338" placeholder="footer_responsive_link_netflix_originals"><span id="" data-uia="data-uia-footer-label">Programmes originaux Netflix</span></a></li></ul><div class="lang-selection-container" id="lang-switcher"><div data-uia="language-picker+container" class="ui-select-wrapper"><label for="undefined-select" class="ui-label no-display"><span class="ui-label-text"></span></label><div class="select-arrow medium prefix globe"><select data-uia="language-picker" class="ui-select medium" id="undefined-select" tabindex="0" placeholder="lang-switcher"><option selected="" value="/fr/" data-language="fr" data-country="FR">Français</option><option value="/fr-en/" data-language="en" data-country="FR">English</option></select></div></div></div><p class="footer-country">Netflix France</p></div></div><div class="center-pixel" style="position:absolute"></div></div></div>
-                            </div>
+                                            </div>
+                                        </form>
+                    </div>
+                    <div class="center-pixel" style="position:absolute"></div></div><div class="our-story-card card-contents footer-card our-story-card-no-border" style="position:relative" data-uia-our-story="footer" data-uia="our-story-card"><div class="site-footer-wrapper centered dark"><div class="footer-divider"></div><div class="site-footer"><p class="footer-top"><a class="footer-top-a" href="https://help.netflix.com/contactus">Des questions&nbsp;? Contactez-nous.</a></p><ul class="footer-links structural"><li class="footer-link-item" placeholder="footer_responsive_link_faq_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/support/412" placeholder="footer_responsive_link_faq"><span id="" data-uia="data-uia-footer-label">FAQ</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_help_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com" placeholder="footer_responsive_link_help"><span id="" data-uia="data-uia-footer-label">Centre d'aide</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_account_item"><a class="footer-link" data-uia="footer-link" href="/youraccount" placeholder="footer_responsive_link_account"><span id="" data-uia="data-uia-footer-label">Compte</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_media_center_item"><a class="footer-link" data-uia="footer-link" href="https://media.netflix.com/" placeholder="footer_responsive_link_media_center"><span id="" data-uia="data-uia-footer-label">Presse</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_relations_item"><a class="footer-link" data-uia="footer-link" href="http://ir.netflix.com/" placeholder="footer_responsive_link_relations"><span id="" data-uia="data-uia-footer-label">Relations Investisseurs</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_jobs_item"><a class="footer-link" data-uia="footer-link" href="https://jobs.netflix.com/jobs" placeholder="footer_responsive_link_jobs"><span id="" data-uia="data-uia-footer-label">Recrutement</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_gift_redeem_item"><a class="footer-link" data-uia="footer-link" href="/redeem" placeholder="footer_responsive_link_gift_redeem"><span id="" data-uia="data-uia-footer-label">Utiliser des cartes cadeaux</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_gift_buy_item"><a class="footer-link" data-uia="footer-link" href="/gift-cards" placeholder="footer_responsive_link_gift_buy"><span id="" data-uia="data-uia-footer-label">Acheter des cartes cadeaux</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_waysToWatch_item"><a class="footer-link" data-uia="footer-link" href="/watch" placeholder="footer_responsive_link_waysToWatch"><span id="" data-uia="data-uia-footer-label">Modes de lecture</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_terms_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/termsofuse" placeholder="footer_responsive_link_terms"><span id="" data-uia="data-uia-footer-label">Conditions d'utilisation</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_privacy_separate_link_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/privacy" placeholder="footer_responsive_link_privacy_separate_link"><span id="" data-uia="data-uia-footer-label">Confidentialité</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_cookies_separate_link_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/privacy#cookies" placeholder="footer_responsive_link_cookies_separate_link"><span id="" data-uia="data-uia-footer-label">Préférences de cookies</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_corporate_information_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/fr/node/2101" placeholder="footer_responsive_link_corporate_information"><span id="" data-uia="data-uia-footer-label">Mentions légales</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_contact_us_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/contactus" placeholder="footer_responsive_link_contact_us"><span id="" data-uia="data-uia-footer-label">Nous contacter</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_speed_test_item"><a class="footer-link" data-uia="footer-link" href="https://fast.com" placeholder="footer_responsive_link_speed_test"><span id="" data-uia="data-uia-footer-label">Test de vitesse</span></a></li><li class="footer-link-item" placeholder="footer_responsive_link_legal_notices_item"><a class="footer-link" data-uia="footer-link" href="https://help.netflix.com/legal/notices" placeholder="footer_responsive_link_legal_notices"><span id="" data-uia="data-uia-footer-label">Informations légales</span></a></li><li class="footer-link-item originals-link" placeholder="footer_responsive_link_netflix_originals_item"><a class="footer-link" data-uia="footer-link" href="https://www.netflix.com/fr/browse/genre/839338" placeholder="footer_responsive_link_netflix_originals"><span id="" data-uia="data-uia-footer-label">Programmes originaux Netflix</span></a></li></ul><div class="lang-selection-container" id="lang-switcher"><div data-uia="language-picker+container" class="ui-select-wrapper"><label for="undefined-select" class="ui-label no-display"><span class="ui-label-text"></span></label><div class="select-arrow medium prefix globe"><select data-uia="language-picker" class="ui-select medium" id="undefined-select" tabindex="0" placeholder="lang-switcher"><option selected="" value="/fr/" data-language="fr" data-country="FR">Français</option><option value="/fr-en/" data-language="en" data-country="FR">English</option></select></div></div></div><p class="footer-country">Netflix France</p></div></div><div class="center-pixel" style="position:absolute"></div></div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="/personalization/cl2/freeform/DebugEvent?source=www&amp;action=cssSimplicityPrefetch&amp;statusCode=200&amp;startTime=1586945476701&amp;endTime=1586945476938" style="display: none">
-        <img src="/personalization/cl2/freeform/DebugEvent?source=www&amp;action=jsSimplicityPrefetch&amp;statusCode=200&amp;startTime=1586945476700&amp;endTime=1586945477600" style="display: none">
-    </body>
-{% endblock %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <img src="/personalization/cl2/freeform/DebugEvent?source=www&amp;action=cssSimplicityPrefetch&amp;statusCode=200&amp;startTime=1586945476701&amp;endTime=1586945476938" style="display: none">
+    <img src="/personalization/cl2/freeform/DebugEvent?source=www&amp;action=jsSimplicityPrefetch&amp;statusCode=200&amp;startTime=1586945476700&amp;endTime=1586945477600" style="display: none">
+</body>
